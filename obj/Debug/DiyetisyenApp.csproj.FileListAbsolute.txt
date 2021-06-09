@@ -26,3 +26,5 @@ C:\Users\cihat\gitHub\DiyetisyenApp\DiyetisyenApp\DiyetisyenApp\bin\Debug\Entity
 C:\Users\cihat\gitHub\DiyetisyenApp\DiyetisyenApp\DiyetisyenApp\obj\Debug\DiyetisyenApp.Properties.Resources.resources
 C:\Users\cihat\gitHub\DiyetisyenApp\DiyetisyenApp\DiyetisyenApp\obj\Debug\DiyetisyenApp.csproj.CoreCompileInputs.cache
 C:\Users\cihat\gitHub\DiyetisyenApp\DiyetisyenApp\DiyetisyenApp\obj\Debug\DiyetisyenApp.csproj.CopyComplete
+C:\Users\cihat\gitHub\DiyetisyenApp\DiyetisyenApp\DiyetisyenApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cihat\gitHub\DiyetisyenApp\DiyetisyenApp\DiyetisyenApp\bin\Debug\Newtonsoft.Json.xml

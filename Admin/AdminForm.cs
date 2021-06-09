@@ -68,5 +68,10 @@ namespace DiyetisyenApp
             this.Hide();
             k.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

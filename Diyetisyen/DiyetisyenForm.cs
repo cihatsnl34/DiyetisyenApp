@@ -3,16 +3,25 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DiyetisyenApp.DB;
+using DiyetisyenApp.Rapor;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace DiyetisyenApp
 {
     public partial class DiyetForm : Form
     {
+        Dictionary<string, string> Hasta = new Dictionary<string, string>();
+        Akdeniz akdeniz = new Akdeniz();
+        GlutenFree glf = new GlutenFree();
+        DenizUrunleri dnzurn = new DenizUrunleri();
+        YesilliklerDunya yslk = new YesilliklerDunya();
         private DiyetisyenContext _db;
         readonly yaziSartlari _sart;
         private string _diyetisyenAdi;
@@ -29,13 +38,13 @@ namespace DiyetisyenApp
             var hastaList = _db.HastaTables.Where(q => q.doktorAdi == _diyetisyenAdi).ToList();
             foreach (var l in hastaList)
             {
-               
-                ListViewItem addhasta = new ListViewItem(l.adi);
+                ListViewItem addhasta = new ListViewItem(l.tc);
+                addhasta.SubItems.Add(l.adi);
                 addhasta.SubItems.Add(l.soyadi);
                 addhasta.SubItems.Add(l.hastalikTipi);
                 addhasta.SubItems.Add(l.uygulanacakDiyet);
                 HastaList.Items.Add(addhasta);
-               
+
             }
 
 
@@ -71,7 +80,7 @@ namespace DiyetisyenApp
                 IDiyetTipi diyet = DiyetFabrikasi.DiyetOlustur(CB_Uygulanacak_Diyet.Text);
                 // factory implementation -------------------------
                 MessageBox.Show(hastalik.hastalik(), "Hastalik", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                MessageBox.Show(diyet.Diyet(), "Diyet", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(diyet.Diyet().ToString(), "Diyet", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //-------------------------------------------------
 
                 _db.HastaTables.Add(hasta);       
@@ -88,7 +97,8 @@ namespace DiyetisyenApp
             var hastaList = _db.HastaTables.Where(q => q.doktorAdi == _diyetisyenAdi).ToList();
             foreach (var l in hastaList)
             {
-                ListViewItem addhasta = new ListViewItem(l.adi);
+                ListViewItem addhasta = new ListViewItem(l.tc);
+                addhasta.SubItems.Add(l.adi);
                 addhasta.SubItems.Add(l.soyadi);
                 addhasta.SubItems.Add(l.hastalikTipi);
                 addhasta.SubItems.Add(l.uygulanacakDiyet);
@@ -115,31 +125,100 @@ namespace DiyetisyenApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
             if (HastaList.SelectedItems.Count >0)
             {
-                /*int id = int.Parse( HastaList.SelectedItems[0].SubItems[0].Text);
-                var getHasta = _db.HastaTables.Find(id);
-
-                MessageBox.Show(getHasta.adi);
+                var tc = HastaList.SelectedItems[0].SubItems[0].Text;
+                MessageBox.Show(tc);
+                var getHasta = _db.HastaTables.FirstOrDefault(q=>q.tc==tc);
                 var hastaAdi = getHasta.adi;
                 var hastaSoyadi = getHasta.soyadi;
                 var hastaTc = getHasta.tc;
                 var hastaKilosu = getHasta.kilo;
                 var hastaYasi = getHasta.yas;
                 var hastaDiyet = getHasta.uygulanacakDiyet;
-                var hastaHastalik = getHasta.hastalikTipi;
+                var hastalikTipi = getHasta.hastalikTipi;
+               
+                Hasta.Add("Hasta Adı:", getHasta.adi);
+                Hasta.Add("Hasta Soyadı:", getHasta.soyadi);
+                Hasta.Add("Hasta Tc:", getHasta.tc);
+                Hasta.Add("Hasta Kilosu:", getHasta.kilo.ToString());
+                Hasta.Add("Hasta Yasi:", getHasta.yas.ToString());
+                Hasta.Add("Hasta Diyet:", getHasta.uygulanacakDiyet);
+                Hasta.Add("Hastalık Tipi:", getHasta.hastalikTipi);
+                
+                dosyaolustur(hastaDiyet);
+                //string fileName = "Akdeniz_Rapor.json";
+                //var JsonObject = JsonConvert.SerializeObject(Hasta);
+                //string writeText = JsonObject + akdeniz.Diyet();
+                //FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
+                //fs.Close();
+                //File.AppendAllText(fileName, Environment.NewLine + writeText);
 
-                print paitent data to json and html report 
-                */
+
+
+
             }
-            
         }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             LoginForm k = new LoginForm();
             this.Hide();
             k.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+        public void dosyaolustur(string hastadiyet)
+        {
+
+            MessageBox.Show(hastadiyet);
+            if (hastadiyet.ToString() == "Akdeniz")
+            {
+                string fileName = "Akdeniz_Rapor.json";
+                var JsonObject = JsonConvert.SerializeObject(Hasta);
+                string writeText = JsonObject + akdeniz.Diyet();
+                FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
+                fs.Close();
+                File.AppendAllText(fileName, Environment.NewLine + writeText);
+                Hasta.Clear();
+            }
+            if (hastadiyet.ToString() == "Gluten Free")
+            {
+                string fileName = "Gluten_Free_Rapor.json";
+                var JsonObject = JsonConvert.SerializeObject(Hasta);
+                string writeText = JsonObject + glf.Diyet();
+                FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
+                fs.Close();
+                File.AppendAllText(fileName, Environment.NewLine + writeText);
+                Hasta.Clear();
+            }
+            if (hastadiyet.ToString() == "Yeşillikler Dünyası")
+            {
+                string fileName = "Yeşillikler_Dünyası_Rapor.json";
+                var JsonObject = JsonConvert.SerializeObject(Hasta);
+                string writeText = JsonObject + yslk.Diyet();
+                FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
+                fs.Close();
+                File.AppendAllText(fileName, Environment.NewLine + writeText);
+                Hasta.Clear();
+            }
+            if (hastadiyet.ToString() == "Deniz Ürünleri")
+            {
+                string fileName = "Deniz_Ürünleri_Rapor.json";
+                var JsonObject = JsonConvert.SerializeObject(Hasta);
+                string writeText = JsonObject + dnzurn.Diyet();
+                FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate, FileAccess.Write);
+                fs.Close();
+                File.AppendAllText(fileName, Environment.NewLine + writeText);
+                Hasta.Clear();
+            }
+
+
+            
+
         }
     }
 }

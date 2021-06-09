@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiyetisyenApp
+namespace DiyetisyenApp.Rapor
 {
-    public interface IDiyetTipi
+   public class Gun
     {
-        object Diyet();
+        public int Gunler { get; set; }
     }
 }

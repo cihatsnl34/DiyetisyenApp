@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DiyetisyenDBModelStoreContainer" CdmEntityContainer="DiyetisyenContext">
+    <EntitySetMapping Name="HastaTables">
+      <EntityTypeMapping TypeName="DiyetisyenDBModel.HastaTable">
+        <MappingFragment StoreEntitySet="HastaTable">
+          <ScalarProperty Name="doktorAdi" ColumnName="doktorAdi" />
+          <ScalarProperty Name="uygulanacakDiyet" ColumnName="uygulanacakDiyet" />
+          <ScalarProperty Name="hastalikTipi" ColumnName="hastalikTipi" />
+          <ScalarProperty Name="kilo" ColumnName="kilo" />
+          <ScalarProperty Name="yas" ColumnName="yas" />
+          <ScalarProperty Name="tc" ColumnName="tc" />
+          <ScalarProperty Name="soyadi" ColumnName="soyadi" />
+          <ScalarProperty Name="adi" ColumnName="adi" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KullaniciRoles">
+      <EntityTypeMapping TypeName="DiyetisyenDBModel.KullaniciRole">
+        <MappingFragment StoreEntitySet="KullaniciRole">
+          <ScalarProperty Name="roleId" ColumnName="roleId" />
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KullaniciTables">
+      <EntityTypeMapping TypeName="DiyetisyenDBModel.KullaniciTable">
+        <MappingFragment StoreEntitySet="KullaniciTable">
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="DiyetisyenDBModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

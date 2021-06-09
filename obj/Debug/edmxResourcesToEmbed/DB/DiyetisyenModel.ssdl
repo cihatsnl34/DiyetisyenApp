@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DiyetisyenDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HastaTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adi" Type="varchar" MaxLength="100" />
+    <Property Name="soyadi" Type="varchar" MaxLength="100" />
+    <Property Name="tc" Type="varchar" MaxLength="100" />
+    <Property Name="yas" Type="int" />
+    <Property Name="kilo" Type="int" />
+    <Property Name="hastalikTipi" Type="varchar" MaxLength="100" />
+    <Property Name="uygulanacakDiyet" Type="varchar" MaxLength="100" />
+    <Property Name="doktorAdi" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="KullaniciRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="userId" Type="int" />
+    <Property Name="roleId" Type="int" />
+  </EntityType>
+  <EntityType Name="KullaniciTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="varchar" MaxLength="100" />
+    <Property Name="Sifre" Type="varchar" MaxLength="100" />
+    <Property Name="Ad" Type="varchar" MaxLength="100" />
+    <Property Name="Soyad" Type="varchar" MaxLength="100" />
+    <Property Name="TC" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_UserRole_KullaniciTable">
+    <End Role="KullaniciTable" Type="Self.KullaniciTable" Multiplicity="0..1" />
+    <End Role="KullaniciRole" Type="Self.KullaniciRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KullaniciTable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="KullaniciRole">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="KullaniciRole" Type="Self.KullaniciRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="KullaniciRole">
+        <PropertyRef Name="roleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DiyetisyenDBModelStoreContainer">
+    <EntitySet Name="HastaTable" EntityType="Self.HastaTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KullaniciRole" EntityType="Self.KullaniciRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KullaniciTable" EntityType="Self.KullaniciTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_UserRole_KullaniciTable" Association="Self.FK_UserRole_KullaniciTable">
+      <End Role="KullaniciTable" EntitySet="KullaniciTable" />
+      <End Role="KullaniciRole" EntitySet="KullaniciRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_Roles" Association="Self.FK_UserRole_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="KullaniciRole" EntitySet="KullaniciRole" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

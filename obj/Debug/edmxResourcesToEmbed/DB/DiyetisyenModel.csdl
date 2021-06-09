@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DiyetisyenDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DiyetisyenContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="HastaTables" EntityType="DiyetisyenDBModel.HastaTable" />
+    <EntitySet Name="KullaniciRoles" EntityType="DiyetisyenDBModel.KullaniciRole" />
+    <EntitySet Name="KullaniciTables" EntityType="DiyetisyenDBModel.KullaniciTable" />
+    <EntitySet Name="Roles" EntityType="DiyetisyenDBModel.Role" />
+    <AssociationSet Name="FK_UserRole_KullaniciTable" Association="DiyetisyenDBModel.FK_UserRole_KullaniciTable">
+      <End Role="KullaniciTable" EntitySet="KullaniciTables" />
+      <End Role="KullaniciRole" EntitySet="KullaniciRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_Roles" Association="DiyetisyenDBModel.FK_UserRole_Roles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="KullaniciRole" EntitySet="KullaniciRoles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="HastaTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="soyadi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tc" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="yas" Type="Int32" />
+    <Property Name="kilo" Type="Int32" />
+    <Property Name="hastalikTipi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="uygulanacakDiyet" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="doktorAdi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="KullaniciRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userId" Type="Int32" />
+    <Property Name="roleId" Type="Int32" />
+    <NavigationProperty Name="KullaniciTable" Relationship="DiyetisyenDBModel.FK_UserRole_KullaniciTable" FromRole="KullaniciRole" ToRole="KullaniciTable" />
+    <NavigationProperty Name="Role" Relationship="DiyetisyenDBModel.FK_UserRole_Roles" FromRole="KullaniciRole" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="KullaniciTable">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Soyad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TC" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="KullaniciRoles" Relationship="DiyetisyenDBModel.FK_UserRole_KullaniciTable" FromRole="KullaniciTable" ToRole="KullaniciRole" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="KullaniciRoles" Relationship="DiyetisyenDBModel.FK_UserRole_Roles" FromRole="Role" ToRole="KullaniciRole" />
+  </EntityType>
+  <Association Name="FK_UserRole_KullaniciTable">
+    <End Type="DiyetisyenDBModel.KullaniciTable" Role="KullaniciTable" Multiplicity="0..1" />
+    <End Type="DiyetisyenDBModel.KullaniciRole" Role="KullaniciRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KullaniciTable">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="KullaniciRole">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_Roles">
+    <End Type="DiyetisyenDBModel.Role" Role="Role" Multiplicity="0..1" />
+    <End Type="DiyetisyenDBModel.KullaniciRole" Role="KullaniciRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="KullaniciRole">
+        <PropertyRef Name="roleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

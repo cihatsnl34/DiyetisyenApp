@@ -71,6 +71,13 @@
       <DependentUpon>DiyetisyenEkleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Diyet Fabrika\Akdeniz.cs" />
+    <Compile Include="Diyet Fabrika\YesilliklerDunyasi.cs" />
+    <Compile Include="Diyetisyen\dosyaOlusturForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diyetisyen\dosyaOlusturForm.Designer.cs">
+      <DependentUpon>dosyaOlusturForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hastalik Fabrika\Colyak.cs" />
     <Compile Include="DB\HastaTable.cs">
       <DependentUpon>DiyetisyenModel.tt</DependentUpon>
@@ -126,11 +133,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Rapor\DiyetBilgileri.cs" />
-    <Compile Include="Rapor\Gun.cs" />
-    <Compile Include="Rapor\HastaBigileri.cs" />
+    <Compile Include="Rapor\JSON\DiyetBilgileri.cs" />
+    <Compile Include="Rapor\XML\DiyetBil_xml.cs" />
     <Compile Include="yaziSartlari.cs" />
-    <Compile Include="Diyet Fabrika\YesilliklerDunya.cs" />
     <EmbeddedResource Include="Admin\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Diyetisyen\DiyetisyenForm.resx">
       <DependentUpon>DiyetisyenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diyetisyen\dosyaOlusturForm.resx">
+      <DependentUpon>dosyaOlusturForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Diyetisyen\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

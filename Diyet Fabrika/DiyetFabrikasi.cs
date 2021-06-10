@@ -8,14 +8,14 @@ namespace DiyetisyenApp
 {
     public class DiyetFabrikasi
     {
-        public static IDiyetTipi DiyetOlustur(string diyetTipi)
+        public IDiyetTipi DiyetOlustur(string diyetTipi)
         {
             switch (diyetTipi)
             {
                 case "Deniz Ürünleri":
                     return new DenizUrunleri();
                 case "Yeşillikler Dünyası":
-                    return new YesilliklerDunya();
+                    return new YesilliklerDunyasi();
                 case "Gluten Free":
                     return new GlutenFree();
                 case "Akdeniz":

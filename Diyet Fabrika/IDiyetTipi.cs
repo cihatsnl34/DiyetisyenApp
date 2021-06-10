@@ -8,6 +8,7 @@ namespace DiyetisyenApp
 {
     public interface IDiyetTipi
     {
-        object Diyet();
+        object DiyetJson();
+        object DiyetXml();
     }
 }

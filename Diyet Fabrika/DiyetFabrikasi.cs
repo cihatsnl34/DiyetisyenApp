@@ -24,5 +24,22 @@ namespace DiyetisyenApp
                     return null;
             }
         }
+        public List<string> DiyetSirala()
+        {
+            DenizUrunleri denizUrunleri =  new DenizUrunleri();
+            YesilliklerDunyasi yesilliklerDunyasi = new YesilliklerDunyasi();
+            GlutenFree glutenFree =  new GlutenFree();
+            Akdeniz akdeniz = new Akdeniz();
+
+            List<string> items = new List<string>
+            {
+                denizUrunleri.DiyetAdi(),
+                akdeniz.DiyetAdi(),
+                glutenFree.DiyetAdi(),
+                yesilliklerDunyasi.DiyetAdi()
+            };
+
+            return items;
+        }
     }
 }

@@ -42,6 +42,22 @@ namespace DiyetisyenApp
                 HastaList.Items.Add(addhasta);
 
             }
+
+            HastaFabrikasi hf = new HastaFabrikasi();
+            DiyetFabrikasi df = new DiyetFabrikasi();
+
+            List<string> hastalikListe = hf.HastalikSirala();
+            foreach (var item in hastalikListe)
+            {
+                CB_Hastalik_Tipi.Items.Add(item);
+            }
+
+            List<string> diyetListele = df.DiyetSirala();
+            foreach (var item in diyetListele)
+            {
+                CB_Uygulanacak_Diyet.Items.Add(item);
+            }
+
         }
         private void lblClose_Click(object sender, EventArgs e)
         {
@@ -110,7 +126,6 @@ namespace DiyetisyenApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (HastaList.SelectedItems.Count >0)
             {
                 var tc = HastaList.SelectedItems[0].SubItems[0].Text;

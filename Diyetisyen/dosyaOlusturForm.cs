@@ -56,8 +56,10 @@ namespace DiyetisyenApp.Diyetisyen
         private void btnXml_Click(object sender, EventArgs e)
         {
             var getHasta = _db.HastaTables.FirstOrDefault(q => q.tc == _hastaTC);
+
             DiyetFabrikasi fabrika = new DiyetFabrikasi();
             IDiyetTipi diyet = fabrika.DiyetOlustur(getHasta.uygulanacakDiyet);
+
             DiyetBilgileriXml getRoot = (DiyetBilgileriXml)diyet.DiyetXml();
             getRoot.HastaBilgileri = new Rapor.XML.HastaBilgileri
             {

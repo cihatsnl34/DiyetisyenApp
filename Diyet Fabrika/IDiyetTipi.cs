@@ -10,5 +10,6 @@ namespace DiyetisyenApp
     {
         object DiyetJson();
         object DiyetXml();
+        string DiyetAdi();
     }
 }

@@ -8,19 +8,34 @@ namespace DiyetisyenApp
 {
     public class HastaFabrikasi
     {
-        public static IHastalikTipi HastaOlustur(string hastaTipi)
+        public IHastalikTipi HastalikOlustur(string hastalikTipi)
         {
-            switch (hastaTipi)
+            switch (hastalikTipi)
             {
-                case "Obez":
+                case "Obez Hastalığı":
                     return new Obez();
-                case "Çölyak":
+                case "Çölyak Hastalığı":
                     return new Colyak();
-                case "Şeker":
+                case "Şeker Hastalığı":
                     return new SekerHastalik();
                 default:
                     return null;
             }
+        }
+        public List<string> HastalikSirala()
+        {
+            Obez obez = new Obez();
+            Colyak colyak = new Colyak();
+            SekerHastalik sekerHastalik =  new SekerHastalik();
+
+            List<string> items = new List<string>
+            {
+                obez.hastalik(),
+                colyak.hastalik(),
+                sekerHastalik.hastalik()
+            };
+
+            return items;
         }
     }
 }

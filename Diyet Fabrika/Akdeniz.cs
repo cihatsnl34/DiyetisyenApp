@@ -19,6 +19,11 @@ namespace DiyetisyenApp
         {
             return this.AkdenizDiyetXml();
         }
+        public string DiyetAdi()
+        {
+            return this.Diyet_Adi();
+        }
+
         private object AkdenizDiyet()
         {
             DiyetBilgileriJson root = new DiyetBilgileriJson
@@ -105,6 +110,10 @@ namespace DiyetisyenApp
                 }
             };
             return dbXml;
+        }
+        private string Diyet_Adi()
+        {
+            return "Akdeniz";
         }
 
     }

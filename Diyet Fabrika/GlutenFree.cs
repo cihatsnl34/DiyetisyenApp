@@ -21,6 +21,10 @@ namespace DiyetisyenApp
         {
             return this.GlutenFreeDiyetXml();
         }
+        public string DiyetAdi()
+        {
+            return this.Diyet_Adi();
+        }
 
         private object GlutenFreeDiyet()
         {
@@ -109,5 +113,10 @@ namespace DiyetisyenApp
             };
             return dbXml;
         }
+        private string Diyet_Adi()
+        {
+            return "Gluten Free";
+        }
+
     }
 }

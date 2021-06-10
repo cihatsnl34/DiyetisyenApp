@@ -12,6 +12,7 @@ namespace DiyetisyenApp
         {
             return this.sekerHastalik();
         }
+
         private string sekerHastalik()
         {
             return "Şeker Hastalığı";

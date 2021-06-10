@@ -16,5 +16,6 @@ namespace DiyetisyenApp
         {
             return "Çölyak Hastalığı";
         }
+        
     }
 }

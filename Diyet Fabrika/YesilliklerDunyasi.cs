@@ -19,6 +19,10 @@ namespace DiyetisyenApp
         {
             return this.YesilliklerDiyetXml();
         }
+        public string DiyetAdi()
+        {
+            return this.Diyet_Adi();
+        }
 
         private object YesilliklerDiyet()
         {
@@ -149,6 +153,10 @@ namespace DiyetisyenApp
                 }
             };
             return dbXml;
+        }
+        private string Diyet_Adi()
+        {
+            return "Yeşillikler Dünyası";
         }
     }
 }

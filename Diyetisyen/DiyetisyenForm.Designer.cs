@@ -100,7 +100,7 @@ namespace DiyetisyenApp
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(767, 46);
-            this.button1.TabIndex = 54;
+            this.button1.TabIndex = 0;
             this.button1.Text = "Rapor Yazdır";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -119,7 +119,7 @@ namespace DiyetisyenApp
             this.HastaList.FullRowSelect = true;
             this.HastaList.HideSelection = false;
             this.HastaList.Location = new System.Drawing.Point(731, 142);
-            this.HastaList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HastaList.Margin = new System.Windows.Forms.Padding(4);
             this.HastaList.MultiSelect = false;
             this.HastaList.Name = "HastaList";
             this.HastaList.Size = new System.Drawing.Size(767, 355);
@@ -197,16 +197,11 @@ namespace DiyetisyenApp
             this.CB_Uygulanacak_Diyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Uygulanacak_Diyet.ForeColor = System.Drawing.Color.White;
             this.CB_Uygulanacak_Diyet.FormattingEnabled = true;
-            this.CB_Uygulanacak_Diyet.Items.AddRange(new object[] {
-            "Deniz Ürünleri",
-            "Yeşillikler Dünyası",
-            "Gluten Free",
-            "Akdeniz"});
             this.CB_Uygulanacak_Diyet.Location = new System.Drawing.Point(285, 502);
             this.CB_Uygulanacak_Diyet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CB_Uygulanacak_Diyet.Name = "CB_Uygulanacak_Diyet";
             this.CB_Uygulanacak_Diyet.Size = new System.Drawing.Size(268, 37);
-            this.CB_Uygulanacak_Diyet.TabIndex = 24;
+            this.CB_Uygulanacak_Diyet.TabIndex = 6;
             // 
             // panel4
             // 
@@ -224,15 +219,11 @@ namespace DiyetisyenApp
             this.CB_Hastalik_Tipi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_Hastalik_Tipi.ForeColor = System.Drawing.Color.White;
             this.CB_Hastalik_Tipi.FormattingEnabled = true;
-            this.CB_Hastalik_Tipi.Items.AddRange(new object[] {
-            "Obez",
-            "Çölyak",
-            "Şeker"});
             this.CB_Hastalik_Tipi.Location = new System.Drawing.Point(285, 449);
             this.CB_Hastalik_Tipi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CB_Hastalik_Tipi.Name = "CB_Hastalik_Tipi";
             this.CB_Hastalik_Tipi.Size = new System.Drawing.Size(268, 37);
-            this.CB_Hastalik_Tipi.TabIndex = 24;
+            this.CB_Hastalik_Tipi.TabIndex = 5;
             // 
             // txt_hasta_yas
             // 
@@ -241,12 +232,12 @@ namespace DiyetisyenApp
             this.txt_hasta_yas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_hasta_yas.ForeColor = System.Drawing.SystemColors.Window;
             this.txt_hasta_yas.Location = new System.Drawing.Point(203, 330);
-            this.txt_hasta_yas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_hasta_yas.Margin = new System.Windows.Forms.Padding(4);
             this.txt_hasta_yas.MaximumSize = new System.Drawing.Size(666, 500);
             this.txt_hasta_yas.MinimumSize = new System.Drawing.Size(2, 26);
             this.txt_hasta_yas.Name = "txt_hasta_yas";
             this.txt_hasta_yas.Size = new System.Drawing.Size(326, 34);
-            this.txt_hasta_yas.TabIndex = 53;
+            this.txt_hasta_yas.TabIndex = 4;
             this.txt_hasta_yas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_hasta_yas_KeyPress);
             // 
             // btnHastaEkle
@@ -260,7 +251,7 @@ namespace DiyetisyenApp
             this.btnHastaEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHastaEkle.Name = "btnHastaEkle";
             this.btnHastaEkle.Size = new System.Drawing.Size(549, 62);
-            this.btnHastaEkle.TabIndex = 5;
+            this.btnHastaEkle.TabIndex = 7;
             this.btnHastaEkle.Text = "Onayla";
             this.btnHastaEkle.UseVisualStyleBackColor = false;
             this.btnHastaEkle.Click += new System.EventHandler(this.btnHastaEkle_Click);
@@ -272,12 +263,12 @@ namespace DiyetisyenApp
             this.txt_hasta_kilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_hasta_kilo.ForeColor = System.Drawing.SystemColors.Window;
             this.txt_hasta_kilo.Location = new System.Drawing.Point(203, 281);
-            this.txt_hasta_kilo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_hasta_kilo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_hasta_kilo.MaximumSize = new System.Drawing.Size(666, 500);
             this.txt_hasta_kilo.MinimumSize = new System.Drawing.Size(2, 26);
             this.txt_hasta_kilo.Name = "txt_hasta_kilo";
             this.txt_hasta_kilo.Size = new System.Drawing.Size(326, 34);
-            this.txt_hasta_kilo.TabIndex = 52;
+            this.txt_hasta_kilo.TabIndex = 3;
             this.txt_hasta_kilo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_hasta_kilo_KeyPress);
             // 
             // txt_hasta_tc
@@ -287,12 +278,12 @@ namespace DiyetisyenApp
             this.txt_hasta_tc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_hasta_tc.ForeColor = System.Drawing.SystemColors.Window;
             this.txt_hasta_tc.Location = new System.Drawing.Point(203, 229);
-            this.txt_hasta_tc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_hasta_tc.Margin = new System.Windows.Forms.Padding(4);
             this.txt_hasta_tc.MaximumSize = new System.Drawing.Size(666, 500);
             this.txt_hasta_tc.MinimumSize = new System.Drawing.Size(2, 26);
             this.txt_hasta_tc.Name = "txt_hasta_tc";
             this.txt_hasta_tc.Size = new System.Drawing.Size(326, 34);
-            this.txt_hasta_tc.TabIndex = 51;
+            this.txt_hasta_tc.TabIndex = 2;
             this.txt_hasta_tc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_hasta_tc_KeyPress);
             // 
             // label8
@@ -314,12 +305,12 @@ namespace DiyetisyenApp
             this.txt_hasta_soyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_hasta_soyad.ForeColor = System.Drawing.SystemColors.Window;
             this.txt_hasta_soyad.Location = new System.Drawing.Point(203, 178);
-            this.txt_hasta_soyad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_hasta_soyad.Margin = new System.Windows.Forms.Padding(4);
             this.txt_hasta_soyad.MaximumSize = new System.Drawing.Size(666, 500);
             this.txt_hasta_soyad.MinimumSize = new System.Drawing.Size(2, 26);
             this.txt_hasta_soyad.Name = "txt_hasta_soyad";
             this.txt_hasta_soyad.Size = new System.Drawing.Size(326, 34);
-            this.txt_hasta_soyad.TabIndex = 50;
+            this.txt_hasta_soyad.TabIndex = 1;
             // 
             // txt_hasta_ad
             // 
@@ -328,12 +319,12 @@ namespace DiyetisyenApp
             this.txt_hasta_ad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_hasta_ad.ForeColor = System.Drawing.SystemColors.Window;
             this.txt_hasta_ad.Location = new System.Drawing.Point(203, 130);
-            this.txt_hasta_ad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_hasta_ad.Margin = new System.Windows.Forms.Padding(4);
             this.txt_hasta_ad.MaximumSize = new System.Drawing.Size(666, 500);
             this.txt_hasta_ad.MinimumSize = new System.Drawing.Size(2, 26);
             this.txt_hasta_ad.Name = "txt_hasta_ad";
             this.txt_hasta_ad.Size = new System.Drawing.Size(326, 34);
-            this.txt_hasta_ad.TabIndex = 49;
+            this.txt_hasta_ad.TabIndex = 0;
             // 
             // label14
             // 

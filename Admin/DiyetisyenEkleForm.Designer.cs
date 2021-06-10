@@ -44,22 +44,22 @@ namespace DiyetisyenApp
             this.label3 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblClose = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.txtSifre2);
             this.panel1.Controls.Add(this.txtSifre1);
             this.panel1.Controls.Add(this.txtKullaniciAdi);
@@ -78,16 +78,16 @@ namespace DiyetisyenApp
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(634, 672);
+            this.panel1.Size = new System.Drawing.Size(611, 587);
             this.panel1.TabIndex = 2;
             // 
             // txtSifre2
             // 
-            this.txtSifre2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(61)))), ((int)(((byte)(77)))));
+            this.txtSifre2.BackColor = System.Drawing.Color.White;
             this.txtSifre2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSifre2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSifre2.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtSifre2.Location = new System.Drawing.Point(315, 433);
+            this.txtSifre2.ForeColor = System.Drawing.Color.Black;
+            this.txtSifre2.Location = new System.Drawing.Point(303, 414);
             this.txtSifre2.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifre2.MaximumSize = new System.Drawing.Size(666, 500);
             this.txtSifre2.MinimumSize = new System.Drawing.Size(2, 26);
@@ -98,11 +98,11 @@ namespace DiyetisyenApp
             // 
             // txtSifre1
             // 
-            this.txtSifre1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(61)))), ((int)(((byte)(77)))));
+            this.txtSifre1.BackColor = System.Drawing.Color.White;
             this.txtSifre1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSifre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSifre1.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtSifre1.Location = new System.Drawing.Point(84, 433);
+            this.txtSifre1.ForeColor = System.Drawing.Color.Black;
+            this.txtSifre1.Location = new System.Drawing.Point(72, 414);
             this.txtSifre1.Margin = new System.Windows.Forms.Padding(4);
             this.txtSifre1.MaximumSize = new System.Drawing.Size(666, 500);
             this.txtSifre1.MinimumSize = new System.Drawing.Size(2, 26);
@@ -113,11 +113,11 @@ namespace DiyetisyenApp
             // 
             // txtKullaniciAdi
             // 
-            this.txtKullaniciAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(61)))), ((int)(((byte)(77)))));
+            this.txtKullaniciAdi.BackColor = System.Drawing.Color.White;
             this.txtKullaniciAdi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKullaniciAdi.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(84, 350);
+            this.txtKullaniciAdi.ForeColor = System.Drawing.Color.Black;
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(72, 331);
             this.txtKullaniciAdi.Margin = new System.Windows.Forms.Padding(4);
             this.txtKullaniciAdi.MaximumSize = new System.Drawing.Size(666, 500);
             this.txtKullaniciAdi.MinimumSize = new System.Drawing.Size(2, 26);
@@ -128,11 +128,11 @@ namespace DiyetisyenApp
             // 
             // txtTC
             // 
-            this.txtTC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(61)))), ((int)(((byte)(77)))));
+            this.txtTC.BackColor = System.Drawing.Color.White;
             this.txtTC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTC.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtTC.Location = new System.Drawing.Point(84, 268);
+            this.txtTC.ForeColor = System.Drawing.Color.Black;
+            this.txtTC.Location = new System.Drawing.Point(72, 249);
             this.txtTC.Margin = new System.Windows.Forms.Padding(4);
             this.txtTC.MaximumSize = new System.Drawing.Size(666, 500);
             this.txtTC.MinimumSize = new System.Drawing.Size(2, 26);
@@ -143,11 +143,11 @@ namespace DiyetisyenApp
             // 
             // txtSoyad
             // 
-            this.txtSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(61)))), ((int)(((byte)(77)))));
+            this.txtSoyad.BackColor = System.Drawing.Color.White;
             this.txtSoyad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoyad.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtSoyad.Location = new System.Drawing.Point(296, 180);
+            this.txtSoyad.ForeColor = System.Drawing.Color.Black;
+            this.txtSoyad.Location = new System.Drawing.Point(284, 161);
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.MaximumSize = new System.Drawing.Size(666, 500);
             this.txtSoyad.MinimumSize = new System.Drawing.Size(2, 26);
@@ -157,11 +157,11 @@ namespace DiyetisyenApp
             // 
             // txtAd
             // 
-            this.txtAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(61)))), ((int)(((byte)(77)))));
+            this.txtAd.BackColor = System.Drawing.Color.White;
             this.txtAd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAd.ForeColor = System.Drawing.SystemColors.Window;
-            this.txtAd.Location = new System.Drawing.Point(84, 180);
+            this.txtAd.ForeColor = System.Drawing.Color.Black;
+            this.txtAd.Location = new System.Drawing.Point(72, 161);
             this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.MaximumSize = new System.Drawing.Size(666, 500);
             this.txtAd.MinimumSize = new System.Drawing.Size(2, 26);
@@ -172,9 +172,10 @@ namespace DiyetisyenApp
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(309, 400);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
+            this.label10.Location = new System.Drawing.Point(297, 381);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(159, 29);
@@ -184,9 +185,10 @@ namespace DiyetisyenApp
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(79, 400);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
+            this.label9.Location = new System.Drawing.Point(67, 381);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(68, 29);
@@ -196,9 +198,10 @@ namespace DiyetisyenApp
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(77, 235);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
+            this.label5.Location = new System.Drawing.Point(65, 216);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(252, 29);
@@ -208,9 +211,10 @@ namespace DiyetisyenApp
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(77, 316);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
+            this.label4.Location = new System.Drawing.Point(65, 297);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(158, 29);
@@ -220,9 +224,10 @@ namespace DiyetisyenApp
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(291, 146);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
+            this.label3.Location = new System.Drawing.Point(279, 127);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 29);
@@ -232,9 +237,10 @@ namespace DiyetisyenApp
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(79, 146);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
+            this.label12.Location = new System.Drawing.Point(67, 127);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(44, 29);
@@ -243,21 +249,34 @@ namespace DiyetisyenApp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(19)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.lblClose);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(0, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(634, 69);
+            this.panel2.Size = new System.Drawing.Size(613, 69);
             this.panel2.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DiyetisyenApp.Properties.Resources.icons8_back_new_64;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(39, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblClose
             // 
             this.lblClose.AutoSize = true;
+            this.lblClose.BackColor = System.Drawing.Color.Transparent;
             this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClose.Location = new System.Drawing.Point(585, 10);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(551, 15);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(37, 36);
             this.lblClose.TabIndex = 0;
@@ -267,8 +286,10 @@ namespace DiyetisyenApp
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(164, 10);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(145, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(292, 43);
             this.label1.TabIndex = 0;
@@ -277,12 +298,12 @@ namespace DiyetisyenApp
             // 
             // btnSignUp
             // 
-            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(103)))), ((int)(((byte)(46)))));
+            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(157)))), ((int)(((byte)(106)))));
             this.btnSignUp.FlatAppearance.BorderSize = 0;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUp.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(82, 504);
+            this.btnSignUp.Location = new System.Drawing.Point(70, 485);
             this.btnSignUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(463, 47);
@@ -299,23 +320,12 @@ namespace DiyetisyenApp
             // 
             this.errorProvider2.ContainerControl = this;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DiyetisyenApp.Properties.Resources.icons8_back_new_64;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(39, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // DiyetisyenEkleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(634, 672);
+            this.ClientSize = new System.Drawing.Size(611, 587);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -326,9 +336,9 @@ namespace DiyetisyenApp
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -53,7 +53,7 @@ namespace DiyetisyenApp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(241)))));
             this.panel1.Controls.Add(this.HastaList);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.DiyetisyenList);
@@ -62,28 +62,29 @@ namespace DiyetisyenApp
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1037, 549);
+            this.panel1.Size = new System.Drawing.Size(1383, 676);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // HastaList
             // 
-            this.HastaList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(39)))));
+            this.HastaList.BackColor = System.Drawing.Color.WhiteSmoke;
             this.HastaList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7});
             this.HastaList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HastaList.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.HastaList.ForeColor = System.Drawing.Color.Black;
             this.HastaList.FullRowSelect = true;
             this.HastaList.HideSelection = false;
-            this.HastaList.Location = new System.Drawing.Point(473, 140);
+            this.HastaList.Location = new System.Drawing.Point(631, 172);
+            this.HastaList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HastaList.MultiSelect = false;
             this.HastaList.Name = "HastaList";
-            this.HastaList.Size = new System.Drawing.Size(534, 303);
+            this.HastaList.Size = new System.Drawing.Size(711, 442);
             this.HastaList.TabIndex = 47;
             this.HastaList.UseCompatibleStateImageBehavior = false;
             this.HastaList.View = System.Windows.Forms.View.Details;
@@ -111,30 +112,31 @@ namespace DiyetisyenApp
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(661, 100);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
+            this.label3.Location = new System.Drawing.Point(881, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(177, 26);
+            this.label3.Size = new System.Drawing.Size(226, 32);
             this.label3.TabIndex = 45;
             this.label3.Text = "Kayıtlı Hastalar";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DiyetisyenList
             // 
-            this.DiyetisyenList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(39)))));
+            this.DiyetisyenList.BackColor = System.Drawing.Color.WhiteSmoke;
             this.DiyetisyenList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
             this.DiyetisyenList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DiyetisyenList.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DiyetisyenList.ForeColor = System.Drawing.Color.Black;
             this.DiyetisyenList.FullRowSelect = true;
             this.DiyetisyenList.HideSelection = false;
-            this.DiyetisyenList.Location = new System.Drawing.Point(33, 140);
+            this.DiyetisyenList.Location = new System.Drawing.Point(44, 172);
+            this.DiyetisyenList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DiyetisyenList.Name = "DiyetisyenList";
-            this.DiyetisyenList.Size = new System.Drawing.Size(416, 303);
+            this.DiyetisyenList.Size = new System.Drawing.Size(553, 372);
             this.DiyetisyenList.TabIndex = 44;
             this.DiyetisyenList.UseCompatibleStateImageBehavior = false;
             this.DiyetisyenList.View = System.Windows.Forms.View.Details;
@@ -157,27 +159,27 @@ namespace DiyetisyenApp
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(130, 100);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
+            this.label2.Location = new System.Drawing.Point(173, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(225, 26);
+            this.label2.Size = new System.Drawing.Size(289, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Kayıtlı Diyetisyenler";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnDiyetisyenEkle
             // 
-            this.btnDiyetisyenEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(103)))), ((int)(((byte)(46)))));
+            this.btnDiyetisyenEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(157)))), ((int)(((byte)(106)))));
             this.btnDiyetisyenEkle.FlatAppearance.BorderSize = 0;
             this.btnDiyetisyenEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiyetisyenEkle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDiyetisyenEkle.ForeColor = System.Drawing.Color.White;
-            this.btnDiyetisyenEkle.Location = new System.Drawing.Point(33, 457);
-            this.btnDiyetisyenEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDiyetisyenEkle.Location = new System.Drawing.Point(44, 562);
+            this.btnDiyetisyenEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDiyetisyenEkle.Name = "btnDiyetisyenEkle";
-            this.btnDiyetisyenEkle.Size = new System.Drawing.Size(415, 42);
+            this.btnDiyetisyenEkle.Size = new System.Drawing.Size(553, 52);
             this.btnDiyetisyenEkle.TabIndex = 5;
             this.btnDiyetisyenEkle.Text = "Diyetisyen Ekle";
             this.btnDiyetisyenEkle.UseVisualStyleBackColor = false;
@@ -185,23 +187,23 @@ namespace DiyetisyenApp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(19)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.lblClose);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1037, 54);
+            this.panel2.Size = new System.Drawing.Size(1383, 66);
             this.panel2.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DiyetisyenApp.Properties.Resources.exit_52px;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -211,10 +213,10 @@ namespace DiyetisyenApp
             // 
             this.lblClose.AutoSize = true;
             this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClose.Location = new System.Drawing.Point(998, 10);
-            this.lblClose.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblClose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(241)))));
+            this.lblClose.Location = new System.Drawing.Point(1331, 12);
             this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(33, 31);
+            this.lblClose.Size = new System.Drawing.Size(40, 38);
             this.lblClose.TabIndex = 1;
             this.lblClose.Text = "X";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
@@ -223,22 +225,22 @@ namespace DiyetisyenApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(374, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(241)))));
+            this.label1.Location = new System.Drawing.Point(499, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 34);
+            this.label1.Size = new System.Drawing.Size(375, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "Merhabalar, Admin";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 549);
+            this.ClientSize = new System.Drawing.Size(1383, 676);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminFrom";

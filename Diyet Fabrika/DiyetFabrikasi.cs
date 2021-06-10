@@ -14,7 +14,7 @@ namespace DiyetisyenApp
             {
                 case "Deniz Ürünleri":
                     return new DenizUrunleri();
-                case "Yeşillikler Dünyası":
+                case "Yesillikler Dunyasi":
                     return new YesilliklerDunyasi();
                 case "Gluten Free":
                     return new GlutenFree();

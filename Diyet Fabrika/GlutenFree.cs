@@ -1,6 +1,5 @@
 ﻿using DiyetisyenApp.Rapor;
 using DiyetisyenApp.Rapor.XML;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;

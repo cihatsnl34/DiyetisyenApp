@@ -46,7 +46,7 @@ namespace DiyetisyenApp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(241)))));
             this.panel1.Controls.Add(this.btnLogin);
             this.panel1.Controls.Add(this.TB_PASS);
             this.panel1.Controls.Add(this.TB_USERNAME);
@@ -57,17 +57,17 @@ namespace DiyetisyenApp
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(640, 458);
+            this.panel1.Size = new System.Drawing.Size(640, 374);
             this.panel1.TabIndex = 0;
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(103)))), ((int)(((byte)(46)))));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(157)))), ((int)(((byte)(106)))));
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(52, 327);
+            this.btnLogin.Location = new System.Drawing.Point(56, 278);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(523, 62);
@@ -78,8 +78,10 @@ namespace DiyetisyenApp
             // 
             // TB_PASS
             // 
+            this.TB_PASS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(241)))));
             this.TB_PASS.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_PASS.Location = new System.Drawing.Point(111, 241);
+            this.TB_PASS.ForeColor = System.Drawing.Color.Black;
+            this.TB_PASS.Location = new System.Drawing.Point(116, 201);
             this.TB_PASS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_PASS.Name = "TB_PASS";
             this.TB_PASS.Size = new System.Drawing.Size(463, 54);
@@ -88,8 +90,10 @@ namespace DiyetisyenApp
             // 
             // TB_USERNAME
             // 
+            this.TB_USERNAME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(250)))), ((int)(((byte)(241)))));
             this.TB_USERNAME.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_USERNAME.Location = new System.Drawing.Point(111, 167);
+            this.TB_USERNAME.ForeColor = System.Drawing.Color.Black;
+            this.TB_USERNAME.Location = new System.Drawing.Point(116, 127);
             this.TB_USERNAME.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_USERNAME.Multiline = true;
             this.TB_USERNAME.Name = "TB_USERNAME";
@@ -98,9 +102,9 @@ namespace DiyetisyenApp
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.DimGray;
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
             this.pictureBox2.Image = global::DiyetisyenApp.Properties.Resources.icons8_lock_64;
-            this.pictureBox2.Location = new System.Drawing.Point(52, 241);
+            this.pictureBox2.Location = new System.Drawing.Point(57, 201);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(53, 54);
@@ -110,9 +114,9 @@ namespace DiyetisyenApp
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
             this.pictureBox1.Image = global::DiyetisyenApp.Properties.Resources.icons8_user_64;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 167);
+            this.pictureBox1.Location = new System.Drawing.Point(57, 127);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 54);
@@ -122,20 +126,22 @@ namespace DiyetisyenApp
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(183)))), ((int)(((byte)(19)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(84)))), ((int)(((byte)(74)))));
             this.panel2.Controls.Add(this.lblClose);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(640, 117);
+            this.panel2.Size = new System.Drawing.Size(640, 71);
             this.panel2.TabIndex = 0;
             // 
             // lblClose
             // 
             this.lblClose.AutoSize = true;
+            this.lblClose.BackColor = System.Drawing.Color.Transparent;
             this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClose.Location = new System.Drawing.Point(601, 9);
+            this.lblClose.ForeColor = System.Drawing.Color.White;
+            this.lblClose.Location = new System.Drawing.Point(590, 22);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(27, 25);
             this.lblClose.TabIndex = 1;
@@ -147,10 +153,12 @@ namespace DiyetisyenApp
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 41);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(90, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(508, 51);
+            this.label1.Size = new System.Drawing.Size(441, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "Diyetisyen Uygulaması";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,7 +167,7 @@ namespace DiyetisyenApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 458);
+            this.ClientSize = new System.Drawing.Size(640, 374);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace DiyetisyenApp
 {
-    class YesilliklerDunyasi:IDiyetTipi
+    public class YesilliklerDunyasi : IDiyetTipi
     {
+
         public object DiyetJson()
         {
             return this.YesilliklerDiyet();
@@ -156,7 +157,7 @@ namespace DiyetisyenApp
         }
         private string Diyet_Adi()
         {
-            return "Yeşillikler Dünyası";
+            return "Yesillikler Dunyasi";
         }
     }
 }

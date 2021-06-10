@@ -57,13 +57,19 @@ namespace DiyetisyenApp
             {
                 CB_Uygulanacak_Diyet.Items.Add(item);
             }
-
         }
         private void lblClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
-        private void btnHastaEkle_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            LoginForm k = new LoginForm();
+            this.Hide();
+            k.Show();
+        }
+
+        private void btnHastaEkle_Click_1(object sender, EventArgs e)
         {
             if (txt_hasta_ad.Text == "" && txt_hasta_kilo.Text == "" && txt_hasta_soyad.Text == "" && txt_hasta_tc.Text == "" && txt_hasta_yas.Text == "")
             {
@@ -83,14 +89,14 @@ namespace DiyetisyenApp
                     doktorAdi = _diyetisyenAdi
                 };
 
-                _db.HastaTables.Add(hasta);       
+                _db.HastaTables.Add(hasta);
                 _db.SaveChanges();
-                 MessageBox.Show("Hasta Kaydı ve Diyet Atama Başarıyla Tamamlanmıştır!", "Kayıt Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                 txt_hasta_ad.Text = "";
-                 txt_hasta_kilo.Text = "";
-                 txt_hasta_soyad.Text = "";
-                 txt_hasta_tc.Text = "";
-                 txt_hasta_yas.Text = "";
+                MessageBox.Show("Hasta Kaydı ve Diyet Atama Başarıyla Tamamlanmıştır!", "Kayıt Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txt_hasta_ad.Text = "";
+                txt_hasta_kilo.Text = "";
+                txt_hasta_soyad.Text = "";
+                txt_hasta_tc.Text = "";
+                txt_hasta_yas.Text = "";
             }
 
             //update the list when adding new patient 
@@ -106,39 +112,31 @@ namespace DiyetisyenApp
                 HastaList.Items.Add(addhasta);
 
             }
-
         }
 
-        private void txt_hasta_tc_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_hasta_tc_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             _sart.AllowNumberOnly(e, txt_hasta_tc, errorProvider1);
         }
 
-        private void txt_hasta_kilo_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_hasta_kilo_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             _sart.AllowNumberOnly(e, txt_hasta_tc, errorProvider2);
         }
 
-        private void txt_hasta_yas_KeyPress(object sender, KeyPressEventArgs e)
+        private void txt_hasta_yas_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             _sart.AllowNumberOnly(e, txt_hasta_tc, errorProvider3);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRaporYaz_Click(object sender, EventArgs e)
         {
-            if (HastaList.SelectedItems.Count >0)
+            if (HastaList.SelectedItems.Count > 0)
             {
                 var tc = HastaList.SelectedItems[0].SubItems[0].Text;
                 dosyaOlusturForm dof = new dosyaOlusturForm(tc.ToString());
-                dof.Show(); 
+                dof.Show();
             }
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            LoginForm k = new LoginForm();
-            this.Hide();
-            k.Show();
-        }
-
     }
 }
